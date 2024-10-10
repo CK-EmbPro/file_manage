@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: file_handling
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+basepath: /home/kali/Documents/programming/Java/springboot/file_manage/file_handling/files
+server:
+  port: 8000

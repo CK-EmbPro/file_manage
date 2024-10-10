@@ -1,0 +1,26 @@
+implement services for uploading , downloading and listing files
+listen on the input if some file is uploaded display the name
+1.upload
+==> Post method
+==> organise the request for upload endpoint
+==> Consume the service now for the upload 
+==> Announce the status of uploading via upload_status state
+
+2.Download
+==> Get method for all <a> tags
+==> Handle downloading process using onlick on a 
+=Now Downloading process
+==> content-disposition on backend as attachment to be able to download it 
+==> to set the url for the img you must have a blob
+==> The create an image url actually is a blob object so it is a blobUrl you're creating 
+==> Then a tag have to be pointing  to the path of the image to download that's why you have to get the whole url 
+==> It has to be a blob because it inlcudes actually which server it is running on / hostname then directly the image
+==> Blob mean like a virtual/pseudo location of the image the deployment server is running on to access it easily
+
+3.List files
+==> Get method
+==> Fetch list of file_names for the files in /files on the server
+==> Using formadata simplies things
+==> Using onSubmit if not yet to work with the formdata others wise if there is a direct callback then use action attribute in the form 
+==> Store in a state_array 
+==> Update it everytime a file is <uploaded_successfully>
